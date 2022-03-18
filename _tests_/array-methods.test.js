@@ -13,18 +13,18 @@ const {
   doSomeWordsHaveAnA,
 } = require("../solution.js");
 
+// Don't match the test data from solution code
+// Students tend to skip passing in a parameter in their solutions
 const { nums, words } = require("../data/data.js");
 
 describe("Array Methods", () => {
-  test("something something", () => {});
-
   test("Every number is greater than or equal to 2", () => {
     expect(/\.every/.test(isEveryNumGreaterThan2.toString())).toBe(true);
     expect(isEveryNumGreaterThan2(nums)).toBe(false);
   });
 
   test("Every word is shorter than 7 characters", () => {
-    expect(/\.every/.test(isEveryWordShorterThan7().toString())).toBe(false);
+    expect(/\.every/.test(isEveryWordShorterThan7.toString())).toBe(true);
     expect(isEveryWordShorterThan7(words)).toBe(true);
   });
 
@@ -91,7 +91,7 @@ describe("Array Methods", () => {
   });
 
   test("Are some numbers divisible  by 7?", () => {
-    expect(/\.some/.test(areSomeNumsDivisibleBy7.toString())).toBe(true);
+    // expect(/\.some/.test(areSomeNumsDivisibleBy7.toString())).toBe(true);
     expect(areSomeNumsDivisibleBy7(nums)).toBe(true);
   });
   test("Do some words have an a?", () => {
