@@ -59,12 +59,14 @@ describe("Array Methods", () => {
   });
 
   test("Find the index of the first number that is divisible by 3", () => {
-    expect(/\.find/.test(firstNumIndexDivisibleBy3.toString())).toBe(true);
+    expect(/\.findIndex/.test(firstNumIndexDivisibleBy3.toString())).toBe(true);
     expect(firstNumIndexDivisibleBy3(nums)).toBe(2);
   });
 
   test("Find the index of the first word that is less than 2 characters long", () => {
-    expect(/\.find/.test(firstWordIndexLessThan2Char.toString())).toBe(true);
+    expect(/\.findIndex/.test(firstWordIndexLessThan2Char.toString())).toBe(
+      true
+    );
     expect(firstWordIndexLessThan2Char(words)).toBe(-1);
   });
 
