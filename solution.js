@@ -31,11 +31,11 @@ const firstWordLongerThan4Char = () => {
 
 // Find Index
 
-const firstIndexDivisibleBy3 = () => {
+const firstNumIndexDivisibleBy3 = () => {
   //
 };
 
-const firstWordLessThan2Char = () => {
+const firstWordIndexLessThan2Char = () => {
   //
 };
 
@@ -76,8 +76,8 @@ module.exports = {
   arrayOddLengthWords,
   firstValDivisibleBy4,
   firstWordLongerThan4Char,
-  firstIndexDivisibleBy3,
-  firstWordLessThan2Char,
+  firstNumIndexDivisibleBy3,
+  firstWordIndexLessThan2Char,
   logValuesTimes3,
   logWordsWithExclamation,
   arrayValuesSquaredTimesIndex,
