@@ -5,6 +5,8 @@ const {
   arrayOddLengthWords,
   firstValDivisibleBy4,
   firstWordLongerThan4Char,
+  firstIndexDivisibleBy3,
+  firstWordLessThan2Char,
   logValuesTimes3,
   logWordsWithExclamation,
   arrayValuesSquaredTimesIndex,
@@ -54,6 +56,17 @@ describe("Array Methods", () => {
   test("Find first word longer than 4 characters", () => {
     expect(/\.find/.test(firstWordLongerThan4Char.toString())).toBe(true);
     expect(firstWordLongerThan4Char(words)).toBe("quick");
+  });
+
+  // create the find index test
+  test("Find the index of the first number that is divisible by 3", () => {
+    expect(/\.find/.test(firstIndexDivisibleBy3.toString())).toBe(true);
+    expect(firstIndexDivisibleBy3(nums)).toBe();
+  });
+
+  test("Find the index of the first word that is less than 2 characters long", () => {
+    expect(/\.find/.test(firstWordLessThan2Char.toString())).toBe(true);
+    expect(firstWordLessThan2Char(words)).toBe();
   });
 
   test("Console log the values times 3", () => {
