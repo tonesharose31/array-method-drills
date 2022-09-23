@@ -29,6 +29,16 @@ const firstWordLongerThan4Char = () => {
   //
 };
 
+// Find Index
+
+const firstNumIndexDivisibleBy3 = () => {
+  //
+};
+
+const firstWordIndexLessThan2Char = () => {
+  //
+};
+
 // For Each
 
 const logValuesTimes3 = () => {
@@ -66,6 +76,8 @@ module.exports = {
   arrayOddLengthWords,
   firstValDivisibleBy4,
   firstWordLongerThan4Char,
+  firstNumIndexDivisibleBy3,
+  firstWordIndexLessThan2Char,
   logValuesTimes3,
   logWordsWithExclamation,
   arrayValuesSquaredTimesIndex,
