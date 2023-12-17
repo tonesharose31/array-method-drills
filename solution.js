@@ -2,28 +2,34 @@ const { nums, words } = require("./data/data.js");
 
 // Every
 const isEveryNumGreaterThan2 = () => {
-  //
+  return nums.every(num => num >= 2);
 };
+console.log(isEveryNumGreaterThan2());
 
 const isEveryWordShorterThan7 = () => {
-  //
+  return words.every(word => word.length < 7);
 };
+console.log(isEveryWordShorterThan7());
 
 // Filter
 
 const arrayLessThan5 = () => {
-  //
+  return nums.filter(value => value < 5);
 };
+console.log(arrayLessThan5());
 
 const arrayOddLengthWords = () => {
-  //
+  return words.filter(word => word.length % 2 !== 0);
 };
+console.log(arrayOddLengthWords());
 
 // Find
 
 const firstValDivisibleBy4 = () => {
-  //
+  return nums.find(num => num % 4 === 0);
 };
+console.log(firstValDivisibleBy4());
+
 
 const firstWordLongerThan4Char = () => {
   //
